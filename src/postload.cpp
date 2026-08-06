@@ -30,11 +30,11 @@ namespace
 	}
 }
 
- // sets the sign in state for mw19
+ // sets the sign in state for mw19 Adding this soon
  
  
 
-// E8 ? ? ? ? 84 C0 75 ? 45 84 FF live is in systemlink lobby
+// E8 ? ? ? ? 84 C0 75 ? 45 84 FF live is in systemlink lobby TODO: Patch to 2
 
  void mainmenuoffline()
 {
@@ -44,7 +44,7 @@ void LUI_OpenMenu(const char* menu)
 {	// 48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8B F1 41 8B D8
 	// 48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8B F1 41 8B D8
 	auto func = reinterpret_cast<void* (*)(int a1, const char* menu, int a3, int a4, int a5)>(
-		scan_pattern("\x48\x89\x5C\x24\x00\x48\x89\x74\x24\x00\x57\x48\x83\xEC\x00\x41\x8B\xF1\x41\x8B\xD8", "xxxx?xxxx?xxx?xxxxxx")
+		scan_pattern("\x48\x89\x5C\x24\x00\x48\x89\x74\x24\x00\x57\x48\x83\xEC\x00\x41\x8B\xF1\x41\x8B\xD8", "xxxx?xxxx?xxx?xxxxxx") // TODO: rewrite this whole entire thing lol
 	);
 
 	if (func) func(0, menu, 0, 0, 0);
