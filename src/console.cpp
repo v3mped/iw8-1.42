@@ -11,10 +11,10 @@
 #include "common.hpp"
 #include "postload.hpp"
 
-void Cbuf_AddText(const char* fmt, ...)
+void Cbuf_AddText(const char* fmt, ...) // method from pipes
 {
-    const uintptr_t xpartydisbandAdr = 0x142DF6A9B_g;
-    const uintptr_t GScr_EndlobbyAdr = 0x142DF6ABA_g;
+    const uintptr_t xpartydisbandAdr = 0x142DF6A9B_g; // should be the right address
+    const uintptr_t GScr_EndlobbyAdr = 0x142DF6ABA_g; // should be the right address
 
     char cmd[256]{};
     char post[256]{};
