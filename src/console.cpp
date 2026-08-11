@@ -15,8 +15,22 @@ void Cbuf_AddText(const char* fmt, ...) // method from pipes
 {
     const uintptr_t xpartydisbandAdr = 0x142DF6A9B_g; // 1.42
     const uintptr_t GScr_EndlobbyAdr = 0x142DF6ABA_g; // 1.42
-   // const uintptr_t xpartydisbandAdr = 0x146F39A60_g; // 1.44 MW
-   //  const uintptr_t GScr_EndlobbyAdr = 0x143335130_g; // 1.44 MW
+    
+   //const uintptr_t xpartydisbandAdr = 0x146F39A60_g; // 1.44 MW
+   //const uintptr_t GScr_EndlobbyAdr = 0x143335130_g; // 1.44 MW
+    
+   //const uintptr_t xpartydisbandAdr = 0x_g; // 1.20 MW
+   //const uintptr_t GScr_EndlobbyAdr = 0x_g; // 1.20 MW
+    
+   //const uintptr_t xpartydisbandAdr = 0x_g; // 1.45 MW
+   //const uintptr_t GScr_EndlobbyAdr = 0x_g; // 1.45 MW
+    
+   //const uintptr_t xpartydisbandAdr = 0x_g; // 1.57 MW
+   //const uintptr_t GScr_EndlobbyAdr = 0x_g; // 1.57 MW
+    
+   //const uintptr_t xpartydisbandAdr = 0x_g; // 1.60 MW
+   //const uintptr_t GScr_EndlobbyAdr = 0x_g; // 1.60 MW 
+    
     // TODO Add 1.45,1.20,1.57,1.60
     char cmd[256]{};
     char post[256]{};
