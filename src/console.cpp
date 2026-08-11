@@ -57,7 +57,7 @@ void IW8Console()
     freopen_s(&out, "CONOUT$", "w", stdout);
     freopen_s(&in, "CONIN$", "r", stdin);
 
-    SetConsoleTitleA("IW8-1.42 By T5DW");
+    SetConsoleTitleA("IW8-Offline By T5DW");
 
     std::string command;
 
